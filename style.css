@@ -94,6 +94,7 @@ button:hover {
     background-size: contain;
     background-repeat: no-repeat;
     padding: 10%;
+    border-radius: 1em;
 }
     
 

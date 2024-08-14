@@ -14,9 +14,22 @@ function btnEncriptar() {
 }
 
 function btnDesencriptar() {
-    const textoEncriptado = desencriptar(textArea.value)
-    mensaje.value = textoEncriptado
-    textArea.value = "";
+
+    
+    if (textArea.value == "") {
+        const textoDesencriptado = desencriptar(mensaje.value)
+        textArea.value = textoDesencriptado
+        mensaje.value = "";
+        mensaje.style.backgroundImage = "url('./img/candado.png')"
+        color.style.color = "black"
+        color1.style.color = "black"
+    }
+    else {
+        const textoDesencriptado = desencriptar(textArea.value)
+        mensaje.value = textoDesencriptado
+        textArea.value = "";
+    }
+    
 }
     
 function encriptar(stringEncriptada){
@@ -43,4 +56,16 @@ function desencriptar(stringDesencriptada){
 }
 
 
+function copiar() {
+    const textoCopiado = mensaje.value
+    navigator.clipboard.writeText(textoCopiado)
+    .then(() => {
+        // Notificación de éxito
+        alert("Texto copiado al portapapeles: " + textoCopiado);
+    })
+    .catch(err => {
+        // Manejo de errores
+        console.error("Error al copiar el texto: ", err);
+    });
+}
 
