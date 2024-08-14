@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    background-color: lightblue;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.entrada {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between
+}
+.cuadroTexto {
+    width: 50%;
+    height: 40%;
+    border-radius: 1em;
+    margin-top: 11%;
+    padding: 1em;
+}
+
+textarea {
+    color: black;
+    width: 100%;
+    height: 100%;
+    font-size: 1.5em;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+.informacion {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.icono {
+    width: 4%;
+    height: 10%;
+}
+
+.subContainer {
+    width: 50%;
+    height: 20%;
+}
+
+.botones {
+    width: 100%;
+    display: flex;
+    padding-top: 1em;
+    gap: 15%;
+}
+
+button {
+    background-color: #D8DFE8;
+    width: 50%;
+    height: 4em;
+    border-radius: 1em;
+    color: black;
+    padding: 0%;
+    margin: 0%;
+
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: darkblue;
+    color: white;
+}
+
+.resultado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 100%;
+    
+}
+
+.salidaTexto{
+    background-image: url(./img/candado.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 10%;
+}
+    
+
+.resultadoSub{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    flex-direction: column;
+    height: 90%;
+    width: 90%;
+    border-radius: 1em;
+    gap: 1em;
+}
+
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+p {
+    font-size: 1em;
+    color: black;
+}
+
+.color {
+    color: black;
+}
+.color1 {
+    color: black;
+}
+
+.btnCopiar {
+    margin: 4% 0%;
+}
