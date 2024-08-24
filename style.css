@@ -10,17 +10,19 @@ body {
     height: 100vh;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .entrada {
     width: 70%;
     height: 100%;
     display: flex;
-    align-items:center ;
+    align-items:center;
     justify-content: center;
     flex-direction: column;
-    justify-content: space-between
+    justify-content: space-between;
 }
+
 .cuadroTexto {
     width: 50%;
     height: 40%;
@@ -71,7 +73,6 @@ button {
     color: black;
     padding: 0%;
     margin: 0%;
-
 }
 
 button:hover {
@@ -86,17 +87,16 @@ button:hover {
     justify-content: center;
     width: 30%;
     height: 100%;
-    
 }
 
 .salidaTexto{
     background-image: url(./img/candado.png);
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
     padding: 10%;
     border-radius: 1em;
 }
-    
 
 .resultadoSub{
     background-color: white;
@@ -109,7 +109,6 @@ button:hover {
     border-radius: 1em;
     gap: 1em;
 }
-
 
 h2 {
     font-size: 2em;
@@ -124,10 +123,114 @@ p {
 .color {
     color: black;
 }
+
 .color1 {
     color: black;
 }
 
 .btnCopiar {
     margin: 4% 0%;
+}
+
+/* MEDIA QUERIES */
+
+/* 375px x 1715px */
+@media (max-width: 375px) {
+    .entrada {
+        width: 100%;
+    }
+
+    .cuadroTexto, .subContainer {
+        width: 90%;
+    }
+
+    .icono {
+        width: 10%;
+    }
+
+    button {
+        height: 3em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+
+    .salidaTexto {
+        font-size: 1em;
+    }
+
+    .resultado {
+        width: 100%;
+    }
+}
+
+/* 768px x 1384px */
+@media (max-width: 768px) {
+    .entrada {
+        width: 100%;
+    }
+
+    .cuadroTexto, .subContainer {
+        width: 80%;
+    }
+
+    .icono {
+        width: 6%;
+    }
+
+    button {
+        height: 3.5em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .salidaTexto {
+        font-size: 1.2em;
+    }
+
+    .resultado {
+        width: 100%;
+    }
+}
+
+/* 1440px x 1024px */
+@media (min-width: 1440px) {
+    .entrada, .resultado {
+        width: 50%;
+    }
+
+    .cuadroTexto {
+        width: 60%;
+    }
+
+    .subContainer {
+        width: 60%;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    .salidaTexto {
+        font-size: 1.5em;
+    }
+
+    button {
+        height: 5em;
+    }
 }
